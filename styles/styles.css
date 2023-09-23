@@ -1,0 +1,281 @@
+
+
+/* Estilos para dispositivos de tela pequena */
+@media (max-width: 768px) {
+  header img {
+    max-width: 80%; /* Reduz a largura da imagem no cabeçalho */
+  }
+
+  .section img {
+    max-width: 80%; /* Reduz a largura das imagens nas seções */
+  }
+
+  .nav-links li {
+    margin: 0 5px; /* Reduz o espaçamento entre os ícones de navegação */
+  }
+
+  header img {
+    margin-bottom: 10px; /* Reduz o espaçamento entre a imagem do cabeçalho e o texto */
+  }
+
+  /* Centralizar o background em telas pequenas */
+
+  .parallax img {
+    content: url('/images/IMG_6613.png');
+    width: 100%;
+    height: auto;
+    position: absolute;
+    min-height: 100vh; /* Defina a altura desejada para a seção de parallax */
+    top: 0;
+    left: 0;;
+    transform-origin: center bottom;
+    /* transition: transform 0.1s linear; */
+  }
+}
+
+
+  .parallax {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .parallax img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Isso garante que a imagem cubra toda a tela */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    transform-origin: center bottom;
+    transition: transform 0.1s linear;
+  }
+  
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7; /* Ajuste a opacidade conforme necessário */
+  z-index: -1;
+}
+
+
+/* Estilos da logo */
+.logo {
+  text-align: center; /* Centraliza horizontalmente */
+}
+
+.logo img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura da div */
+  height: auto;
+  filter: brightness(2) saturate(2); /* Aumenta o contraste da imagem */
+}
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-image: url("images/Screenshot\ 2023-08-31\ at\ 21-55-05\ Lara\ \(@docekardoso\)\ •\ Fotos\ e\ vídeos\ do\ Instagram.png");
+  background-size: cover;
+  background-repeat: no-repeat; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%; /* Largura máxima do conteúdo */
+  max-width: 1200px; /* Largura máxima da container */
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Estilos da navegação */
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0; /* Remova as margens padrão para evitar espaços em branco */
+}
+
+.audio-container {
+  z-index: 999;
+  position: fixed;
+  top: 20px; /* Ajuste conforme necessário para definir a distância a partir da parte inferior */
+  right: 20px; /* Ajuste conforme necessário para definir a distância a partir da direita */
+}
+
+.nav-links li {
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.nav-links li:hover {
+  transform: scale(1.2);
+}
+
+.nav-links a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.nav-links img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilos da seção */
+.section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+/* Estilos do cabeçalho */
+header {
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.soundcloud-preview {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Estilos da seção Instagram Feed */
+#instagram-feed {
+  background-color: rgba(80, 77, 77, 0); /* Define o fundo preto */
+  color: white; /* Define a cor do texto como branco */
+  padding: 4rem 0; /* Adicione um espaçamento interno para a seção */
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.instagram-media {
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Estilos da seção SoundCloud */
+#soundcloud {
+  background-color: rgba(80, 77, 77, 0); /* Define o fundo preto */
+  opacity: 0.7; /* Ajuste a opacidade conforme necessário */
+  color: white; /* Define a cor do texto como branco */
+  opacity: 0; /* Começa com a seção invisível */
+  transition: opacity 1s ease-in; /* Adiciona uma transição para o efeito de fade in */
+  padding: 4rem 0; /* Adicione um espaçamento interno para a seção */
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.soundcloud-preview {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Estilos do ícone flutuante */
+.floating-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.floating-icon img {
+  width: 50px; /* Tamanho do ícone */
+  height: 50px;
+  border-radius: 50%;
+  background-color: #25d366; /* Cor de fundo do ícone (cor do WhatsApp) */
+  padding: 10px; /* Espaçamento interno */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.floating-icon img:hover {
+  background-color: #128c7e; /* Cor de fundo do ícone ao passar o mouse */
+}
+
+/* Estilos do formulário de contato */
+#contato {
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+  padding: 4rem 0; /* Espaçamento interno para a seção */
+}
+
+#contato form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Espaçamento entre as inputs */
+  width: 100%; /* Garantir que as inputs tenham a largura completa */
+  max-width: 400px; /* Largura máxima do formulário */
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  resize: vertical; /* Permite redimensionar verticalmente a textarea */
+}
+
+.form-group button {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #128c7e;
+}
+
+
+

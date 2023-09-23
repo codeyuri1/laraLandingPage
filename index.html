@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Lara Katheleen - Página Inicial</title>
+</head>
+<body>
+  <div class="audio-container">
+    <audio autoplay loop controls>
+      <source src="extras/Trampsta & Juicce - MOVE YOUR HUMPS.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <div class="parallax" data-rate="-0.5">
+    <img src="images/IMG_6613v2.png" alt="Imagem de Fundo">
+  </div>
+  
+
+  <div class="content">
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo">
+            <img src="images/logo.png" alt="Lara Katheleen">
+          </div>
+          <ul class="nav-links">
+            <li><a href="#sobre"><img src="https://cdn-icons-png.flaticon.com/512/5670/5670980.png" alt="Sobre"></a></li>
+            <li><a href="#mixes"><img src="https://cdn-icons-png.flaticon.com/512/145/145809.png" alt="Mixes"></a></li>
+            <li><a href="#contato"><img src="images/gmail.svg" alt="Contato"></a></li>
+            <li><a href="#instagram-feed"><img src="https://static.vecteezy.com/system/resources/previews/016/716/469/original/instagram-icon-free-png.png" alt="Instagram"></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div id="whatsapp-icon" class="floating-icon">
+        <a href="https://api.whatsapp.com/send?phone=SEU_NUMERO" target="_blank">
+          <img src="https://i.pinimg.com/originals/67/8b/20/678b20b7e76e3c81baa4f8c6ee1bc656.png" alt="WhatsApp">
+        </a>
+      </div>
+
+      <section id="sobre" class="section">
+        <h1>Sobre Mim</h1>
+        <p>Apaixonada pela música eletrônica, Lara Cardoso, tomou a decisão de transformar seu amor pela pista em realidade, emanando sua energia em suas mixagens , Lara acredita que a música é capaz de transformar e unir as pessoas além de salvar vidas. 
+  
+          Sua constante presença em festivais de música eletrônica fez com que tivesse contato com diversos artistas nacionais e internacionais trazendo uma grande experiência e conhecimento dos diversos estilos musicais, o que influencia em suas apresentações.
+          
+          
+          Lara busca trazer elementos novos que possam surpreende o público com seus sets cheios de personalidade e energias transitando de forma harmônica entre diferentes estilos. Tem sua apresentação baseada no tech house e deep e transita entre as vertentes house, melodic, dance music entre outros.
+          
+          Seu set é leve, dançante e traz uma experiência única.
+          
+          Uma das suas principais características além de um enorme sorriso é o bom feeling da pista, onde busca proporcionar uma atmosfera de vida, união e vibe positiva.</p>
+      </section>
+  
+
+      <section id="instagram-feed" class="section">
+        <h1>Feed do Instagram</h1>
+        <div id="instafeed"></div>
+        <!-- Conteúdo da seção Feed do Instagram -->
+      </section>
+
+      <section id="soundcloud" class="section">
+        <h1>SoundCloud</h1>
+        <div class="soundcloud-preview">
+          <!-- Coloque o código de incorporação do SoundCloud aqui -->
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1402657504&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/anderzdj" title="Anderz" target="_blank" style="color: #cccccc; text-decoration: none;">Anderz</a> · <a href="https://soundcloud.com/anderzdj/anderz-deep-in-narnia-set-live" title="Anderz - Deep In Nárnia (Set Live!)" target="_blank" style="color: #cccccc; text-decoration: none;">Anderz - Deep In Nárnia (Set Live!)</a></div>
+        </div>
+      </section>
+  
+
+      <section id="mixes" class="section">
+        <h1>Mixes Recentes</h1>
+        <div class="mix">
+          <!-- Código dos mixes -->
+        </div>
+        <!-- Repita essa estrutura para cada mix -->
+      </section>
+
+      <section id="contato" class="section">
+        <h1>Contato</h1>
+        <p>Entre em contato conosco através do formulário abaixo:</p>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Lara Katheleen. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <script src="javascript/instafeed-min.js"></script>
+  <script src="javascript/script.js"></script>
+  <script src="javascript/wpp-min.js"></script>
+  <script src="javascript/contato-min.js"></script>
+  <script src="javascript/parallax.min.js"></script>
+</body>
+</html>
