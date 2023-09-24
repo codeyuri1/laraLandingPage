@@ -4,19 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <title>Lara Katheleen - Página Inicial</title>
 </head>
 <body>
   <div class="audio-container">
-    <audio autoplay loop controls>
+    <audio autoplay loop controls id="audio-player">
       <source src="extras/Trampsta & Juicce - MOVE YOUR HUMPS.mp3" type="audio/mpeg">
     </audio>
   </div>
 
+  <div class="audio-button-container"> 
+    <button id="play-button" onclick="toggleAudio()">
+      <i class="fas fa-play"></i>
+    </button>
+  </div>
+  
+
   <div class="parallax" data-rate="-0.5">
     <img src="images/IMG_6613v2.png" alt="Imagem de Fundo">
   </div>
-  
+
 
   <div class="content">
     <div class="container">
@@ -115,5 +123,6 @@
   <script src="javascript/wpp-min.js"></script>
   <script src="javascript/contato-min.js"></script>
   <script src="javascript/parallax.min.js"></script>
+  <script src="javascript/playButton-min.js"></script>
 </body>
 </html>

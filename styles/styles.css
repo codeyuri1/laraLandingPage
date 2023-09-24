@@ -184,7 +184,12 @@ header {
   background-color: #128c7e;
 }
 
-/* Adicione este código ao seu arquivo de estilo CSS */
+.audio-container {
+  z-index: 999;
+  position: fixed;
+  top: 0; /* Ajuste conforme necessário para definir a distância a partir da parte superior */
+  right: 0; /* Ajuste conforme necessário para definir a distância a partir da direita */
+}
 
 /* Estilos do botão personalizado */
 .custom-button {
@@ -201,6 +206,10 @@ header {
 /* Estilo de hover para o botão */
 .custom-button:hover {
   background-color: #ff3300; /* Cor de fundo ao passar o mouse */
+}
+
+.audio-button-container{
+  display: none;
 }
 
 
@@ -235,10 +244,42 @@ header {
     transform-origin: center bottom;
   }
 
-  .audio-container {
-    width: 10px;
-    height: 20px;
-    left: 40%;
+  .audio-button-container {
+    z-index: 999;
+    position: fixed;
+    top: 20px;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
   }
+  
+  #play-button i {
+    font-size: 20px; /* Ajuste o tamanho conforme necessário */
+    color: white;
+    position: relative;
+    top: 0; /* Ajuste conforme necessário para centralizar verticalmente */
+  }
+  
+  #play-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  #play-button:hover i {
+    color: #128c7e;
+  }
+
+  audio {
+    display: none;
+  }
+  
 }
 
