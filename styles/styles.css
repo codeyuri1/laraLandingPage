@@ -235,7 +235,7 @@ header {
 
   .parallax img {
     /*  */
-    content: url('/images/IMG_6613.png');
+    content: url('https://codeyuri1.github.io/laraLandingPage/images/IMG_6613.png');
     width: 100%;
     height: auto;
     position: absolute;
