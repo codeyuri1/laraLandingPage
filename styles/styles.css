@@ -47,6 +47,7 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 20px;
+  /* filter: drop-shadow(10px 0px 10px rgba() */
 }
 
 .nav-links {
@@ -73,13 +74,15 @@ header {
   height: 50px;
   border-radius: 50%;
   overflow: hidden;
-  background-color: #222; /* Cor de fundo padrão */
+  background-color: #f9f9f9; /* Cor de fundo padrão */
   transition: background-color 0.3s ease-in-out;
+  border: 3px solid #ccc;
 }
 
 .nav-links img {
-  width: 100%;
-  height: 100%;
+  margin-top: 7px;
+  width: 70%;
+  height: 70%;
   object-fit: cover;
 }
 
@@ -87,6 +90,22 @@ header {
 .section {
   padding: 4rem 0;
   text-align: center;
+}
+
+#sobre {
+  margin-top: 12px;
+  background-color: #8787876a;
+  border-radius: 10px;
+  padding: 20px; /* Aumentei o padding para um espaçamento maior */
+  border: 1px solid #878787; /* Adicionei uma borda sólida com a mesma cor do fundo */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Adicionei uma sombra para realçar a seção */
+}
+
+#sobre p {
+  /* Estilos para o texto dentro da seção */
+  font-size: 16px;
+  color: #f2f2f2; /* Cor do texto */
+  line-height: 1.5;
 }
 
 /* Estilos da imagem de fundo */
@@ -210,6 +229,38 @@ header {
 
 .audio-button-container{
   display: none;
+}
+
+
+ /* Estilo para o contêiner das imagens */
+ #instagram-feed {
+  margin-bottom: 200px;
+  max-height: 630px; /* Altura máxima desejada */
+  overflow: hidden; /* Esconder conteúdo que excede a altura máxima */
+}
+
+.instagram-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilo para cada imagem do Instagram */
+.instagram-image {
+  width: 30%; /* Largura de cada imagem */
+  margin-right: 10px; /* Espaçamento entre as imagens */
+  max-height: 100%; /* Todas as imagens têm a mesma altura */
+}
+
+/* Estilo para o título da imagem */
+.instagram-image h2 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Estilo para a descrição da imagem */
+.instagram-image p {
+  font-size: 14px;
+  color: #888;
 }
 
 
