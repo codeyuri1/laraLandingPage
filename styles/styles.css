@@ -28,6 +28,15 @@ body {
   overflow-x: hidden; /* Impede a rolagem horizontal */
 }
 
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-x: hidden; /* Impede a rolagem horizontal */
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -57,6 +66,7 @@ header {
   align-items: center;
   padding: 0;
   margin: 0;
+  margin-bottom: 2rem;
 }
 
 .nav-links li {
@@ -93,7 +103,7 @@ header {
 }
 
 #sobre {
-  margin-top: 12px;
+  margin-top: 15px;
   background-color: #8787876a;
   border-radius: 10px;
   padding: 20px; /* Aumentei o padding para um espaçamento maior */
@@ -235,7 +245,7 @@ header {
  /* Estilo para o contêiner das imagens */
  #instagram-feed {
   margin-bottom: 200px;
-  max-height: 630px; /* Altura máxima desejada */
+  max-height: 610px; /* Altura máxima desejada */
   overflow: hidden; /* Esconder conteúdo que excede a altura máxima */
 }
 
@@ -330,6 +340,23 @@ header {
 
   audio {
     display: none;
+  }
+
+   /* Estilos específicos para dispositivos de tela pequena para a seção Instagram */
+
+   #instagram-feed {
+    margin-bottom: 100px; /* Reduza a margem inferior */
+  }
+
+  .instagram-images {
+    flex-direction: column; /* Empilhe as imagens verticalmente */
+    align-items: center; /* Centralize as imagens horizontalmente */
+  }
+
+  .instagram-image {
+    width: 100%; /* Faça as imagens ocuparem a largura total */
+    margin-right: 0; /* Remova o espaçamento entre as imagens */
+    margin-bottom: 10px; /* Adicione um espaçamento inferior entre as imagens */
   }
   
 }
