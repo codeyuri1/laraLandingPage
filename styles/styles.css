@@ -84,15 +84,20 @@ header {
   height: 50px;
   border-radius: 50%;
   overflow: hidden;
-  background-color: #f9f9f9; /* Cor de fundo padrão */
+  background-color: #000000; /* Cor de fundo padrão */
   transition: background-color 0.3s ease-in-out;
   border: 3px solid #ccc;
+  color:#bbb9b8;
+}
+
+.nav-links a svg path {
+  fill: #bbb9b8;
 }
 
 .nav-links img {
   margin-top: 7px;
-  width: 70%;
-  height: 70%;
+  width: 65%;
+  height: 65%;
   object-fit: cover;
 }
 
